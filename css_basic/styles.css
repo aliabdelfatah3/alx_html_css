@@ -1,0 +1,194 @@
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+    
+}
+@keyframes slidein {
+    from {
+      translate: 0 150vw;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  @keyframes slideout {
+    from {
+      translate: -150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  @keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+    }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  height: 60vh;
+}
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: rgba(0, 255, 255, 0.433);
+}
+article h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(195, 47, 133);
+    font-size: x-large;
+    margin-left: 10px;
+}
+article p{
+    text-align: center;
+    font-size: larger;
+    width: 50%;
+    margin-left: 16rem;
+    line-height: 2;
+    text-transform: capitalize;
+    letter-spacing: -0.6px;
+    animation-duration: 1.5s;
+    animation-name: slideout;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: rgba(255, 228, 196, 0.738);
+}
+aside h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: x-large;
+    margin-left: 10px;
+    color: rgb(11, 126, 183);
+}
+aside p {
+    width: 70%;
+    margin-left: 5rem;
+    font-size: larger;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+
+}
+header {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;   
+    transition: all 0.7s cubic-bezier(0.43, 0.23, 0.29, 1.21);
+    
+}
+header h1 {
+    
+    
+    
+    border: solid black;
+    width: 16rem;
+    font-size: xx-large;
+    border-radius: 15px;
+    color: gold;
+    
+}
+.hd {
+    z-index: -9999;
+    text-align: center;
+    margin-left: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: purple;
+    transform: perspective(1000px);
+	transform-origin: center center;
+}
+
+.hd:hover {
+    
+    background-color: black;
+    width: fit-content;
+    border-radius: 15px;
+    
+    transform: rotate3d(1, 2.0, 3.0, 349deg);
+}
+a {
+    text-decoration: none;
+}
+
+
+footer {
+  background-color: rgba(216, 112, 147, 0.604);
+  height: 20vh;
+  text-align: center;
+}
+footer h1 {
+    margin-left: 40%;
+    margin-top: 30px;
+    border: dashed;
+    border-radius: 15px;
+    width: 15rem;
+    
+}
+
+.logo {
+    
+    border: black 2px solid;
+    animation: rotate-animation 3s infinite linear;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 1.7rem; 
+    height: 1.7rem; 
+    text-align: center;
+    transform: perspective(17px);
+    transform: translate(12px, 50%);
+    transition-duration: 1s;
+    background-color: purple;
+}
+.logo:hover {
+    animation: rotate-animation 3ms infinite linear;;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    z-index: 2;
+  }
+
+@media (min-width: 800px) {
+    body.works_on_smartphone {
+        display: flex;
+        
+    }
+    body.works_on_smartphone main {
+        display: flex;
+        
+    }
+}
