@@ -20,6 +20,7 @@ nav {
   width: 100%;
   position: absolute;
   top: 35px;
+  gap: 402px;
 }
 ul {
   list-style: none;
@@ -337,4 +338,32 @@ blockquote {
 .faq-text{
     width: 350px;
     height: 242px;
+}
+/****************footer Section*******************/
+
+.foot {
+    background-color: #071629;
+    padding-top: 90px;
+    padding-bottom: 124px;
+}
+.foot-parent{
+    display: flex;
+    justify-content: space-around;
+    gap: 436px;
+  
+}
+.foot-rate{
+    color: #FFFFFF;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.foot p{
+    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: -90px;
 }
