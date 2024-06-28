@@ -22,6 +22,10 @@ nav {
   top: 35px;
   gap: 402px;
 }
+.log{
+    width: 169px;
+    height: 30px;
+}
 ul {
   list-style: none;
 }
@@ -60,6 +64,7 @@ header nav ul {
     font-weight: bold;
 }
 .hero1-text {
+    font-size: 16px;
     gap: 59px;
     margin-top: 23px;
     margin-bottom: 38px;
@@ -90,6 +95,7 @@ header nav ul {
     margin-bottom: 87px;
     color: white;
     font-weight: lighter;
+    font-size: 32px;
 }
 .hero2 {
     display: flex;
@@ -97,8 +103,12 @@ header nav ul {
     padding-bottom: 98px;
     color: #FFFFFF;
 }
+.hero2 h3{
+    font-size: 18px;
+}
 .hero2 p {
     font-style: italic;
+    font-size: 16px;
 }
 .hero2-img {
     border-radius: 50%;
@@ -129,6 +139,7 @@ blockquote {
 }
 .hero3-text p {
     font-size: 22px;
+    font-style: italic;
 }
 
 /**************3rd Section***************/
@@ -265,6 +276,7 @@ blockquote {
     align-items: center;
 }
 .fmship h2{
+    font-size: 32px;
     font-weight: lighter;
     margin-top: 70px;
     margin-bottom: 58px;
@@ -295,6 +307,7 @@ blockquote {
 .fmship button {
     width: 162px;
     height: 44px;
+    font-size: 14px;
     border: solid 0;
     border-radius: 22px;
     background-color: #C271FF;
@@ -334,6 +347,7 @@ blockquote {
 }
 .faq-child p{
     color: rgba(7, 22, 41, 0.5016);
+    font-size: 14px;
 }
 .faq-text{
     width: 350px;
@@ -357,13 +371,15 @@ blockquote {
     display: flex;
     gap: 20px;
     text-align: center;
+    font-size: 28px;
 }
 
 
 .foot p{
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.416);
     display: flex;
     justify-content: center;
+    font-size: 12px;
     margin-top: 70px;
     margin-bottom: -90px;
 }
