@@ -133,7 +133,7 @@ li {
   cursor: pointer;
 }
 .hero-text-container button:hover {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .hero-text-p3 {
@@ -229,16 +229,68 @@ li {
   top: 70px;
   left: 40px;
   bottom: 39px;
+}
+.pen-text h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-family: "customfonts", sans-serif;
+}
+.pen-text p {
+  font-size: 14px;
+  font-family: "customfonts2", sans-serif;
+}
 
-}
-.pen-text h2{
-    font-size: 46px;
-    margin-bottom: 20px;
-    font-family: "customfonts", sans-serif;
-}
-.pen-text  p{
-    font-size: 14px;
-    font-family: "customfonts2", sans-serif;
-}
+/**************************************Contact Us Section********************************************/
 
- 
+.contact-us {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-left: none;
+  margin-top: 110px;
+}
+.contact-us h2 {
+  margin-bottom: 56px;
+  font-family: "customfonts3",sans-serif;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "customfonts3", sans-serif;
+  font-weight: bold;
+  width: 335px;
+  margin-bottom: 56px;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-top: 2px outset #071629;
+  border-bottom: 0px solid;
+  border-left: 0px solid;
+  border-right: 0px solid;
+  opacity: 17.45%;
+}
+label {
+  margin-bottom: 10px;
+}
+.contact-us button {
+  background-color: #ff6565;
+  font-size: 14px;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  font-family: "customfont", sans-serif;
+  font-size: 14px;
+  
+  cursor: pointer;
+  margin-bottom: 143px;
+}
+.contact-us button:hover{
+    opacity: 0.9;
+}
