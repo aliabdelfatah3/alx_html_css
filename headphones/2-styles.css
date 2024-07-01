@@ -184,6 +184,8 @@ li {
   font-family: "customfonts3", sans-serif;
   font-size: 18px;
 }
+/**************************************Our Results Section********************************************/
+
 .our-results {
   color: #ffffff;
   background-image: url(images/headphones_hero_2.jpg);
@@ -233,7 +235,6 @@ li {
     font-size: 46px;
     margin-bottom: 20px;
     font-family: "customfonts", sans-serif;
-    font-weight: bold;
 }
 .pen-text  p{
     font-size: 14px;
