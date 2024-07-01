@@ -1,134 +1,176 @@
 /***********************************************Responsive*****************************************************/
 @media (max-width: 800px) {
-    
 }
 @media (max-width: 480px) {
-  body .hero{
+  body .hero {
     background-position: 35% 40%;
-    background-size: auto;
+    background-size: auto;
   }
-    .hero-text-p1{
-        width: 357px;
-        height: 80px;
-    }
-    .hero-text2{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .hero-text-p2{
-        width: 279px;
-        font-size: 16px;
-        height: 40px;
-    }
-    .hero .hero-text-p3{
-        width: 335px;
-        height: 182px;
-    }
+  #toggle-menu {
+    display: none;
   }
-  /******************************************Fonts*********************************************/
+  #toggle-menu:checked ~ .nav-bar {
+    display: block;
+  }
+
+  .hero-text-p1 {
+    width: 357px;
+    height: 80px;
+  }
+  .hero-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text-p2 {
+    width: 279px;
+    font-size: 16px;
+    height: 40px;
+  }
+  .hero .hero-text-p3 {
+    width: 335px;
+    height: 182px;
+  }
+}
+/******************************************Fonts*********************************************/
 
 @font-face {
-    font-family: 'customfont';
-    src: url(fonts/SourceSansPro-Black.otf) format('opentype');
+  font-family: "customfont";
+  src: url(fonts/SourceSansPro-Black.otf) format("opentype");
 }
 @font-face {
-    font-family: 'customfont2';
-    src: url(fonts/SourceSansPro-Regular.otf) format('opentype');
-
+  font-family: "customfont2";
+  src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont3";
+  src: url(fonts/SourceSansPro-Semibold.otf) format("opentype");
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 /******************************************Header*********************************************/
 header {
-    position: relative;
+  position: relative;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    width: 100%;
-    top: 28px;
-    gap: 220px;
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  gap: 220px;
 }
 .nav-text {
-    display: flex;
-    align-items: center;
-    gap: 41px;
+  display: flex;
+  align-items: center;
+  gap: 41px;
 }
-.nav-text li:hover{
-    color: #FF6565;
+.nav-text li:hover {
+  color: #ff6565;
 }
 nav img {
-    width: 161px;
-    height: 32px;
-    
+  width: 161px;
+  height: 32px;
 }
 li {
-    color: #FFFFFF;
-    font-family: 'customfont', sans-serif;
-    font-size: 12px;
-    line-height: 15.08px;
+  color: #ffffff;
+  font-family: "customfont", sans-serif;
+  font-size: 12px;
+  line-height: 15.08px;
 }
 
-/**************************************Section 1********************************************/
+/**************************************Hero Section********************************************/
 
-.hero{
-    background-image: url(images/headphones_hero_1.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #FFFFFF;
+.hero {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
 }
-.hero-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 372px;
-    padding-bottom: 115px;
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 372px;
+  padding-bottom: 115px;
 }
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 40px;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.hero-text-p1{
-    font-family: 'customfont', sans-serif;
-    font-size: 32px;
-    color: #FFFFFF;
+.hero-text-p1 {
+  font-family: "customfont", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
 }
-.hero-text-p2{
-    font-size: 16px;
+.hero-text-p2 {
+  font-size: 16px;
 }
 .hero-text-container button {
-    background-color: #FF6565;
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    border: 0;
-    color: #FFFFFF;
-    font-family: 'customfont', sans-serif;
-    font-size: 14px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+  background-color: #ff6565;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  font-family: "customfont", sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
-.hero-text-container button:hover{
-    opacity: 0.85;
+.hero-text-container button:hover {
+  opacity: 0.85;
 }
 
-.hero-text-p3{
-    margin-top: 65px;
-    width: 637px;
-    text-align: center;
-    font-family: 'customfont2', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
+.hero-text-p3 {
+  margin-top: 65px;
+  width: 637px;
+  text-align: center;
+  font-family: "customfont2", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+/**************************************What We Do Section********************************************/
+
+.what-we-do {
+  color: #071629;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 109px;
+}
+.wwd-text {
+  width: 637px;
+  margin-bottom: 97px;
+}
+.wwd-text h2 {
+  font-family: "customfont3", sans-serif;
+  font-size: 32px;
+  margin-top: 110px;
+  margin-bottom: 40px;
+}
+.wwd-text p {
+  line-height: 26px;
+  font-family: "customfont2", sans-serif;
+}
+.wwd-cards {
+  display: flex;
+  width: 1000px;
+}
+.wwd-cards img{
+    height: 65px;
+    margin-bottom: 24px;
+}
+.wwd-cards p{
+    margin-top: 13px;
 }
