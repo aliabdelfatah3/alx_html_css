@@ -10,7 +10,6 @@ a {
 /********************header**********************/
 header {
   display: flex;
-  background-color: purple;
   position: relative;
 }
 nav {
