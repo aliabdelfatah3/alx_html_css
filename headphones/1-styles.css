@@ -60,7 +60,7 @@ header {
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: absolute;
   width: 100%;
   top: 28px;
@@ -173,4 +173,9 @@ li {
 }
 .wwd-cards p{
     margin-top: 13px;
+    font-family: "customfonts2", sans-serif;
+}
+.wwd-cards h3 {
+    font-family: "customfonts3", sans-serif;
+    font-size: 18px;
 }
