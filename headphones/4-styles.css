@@ -295,3 +295,36 @@ label {
     opacity: 0.9;
 }
 /**************************************Footer Section********************************************/
+
+.foot {
+    background-color: #071629;
+    padding-top: 90px;
+    padding-bottom: 126px;
+}
+.foot-parent{
+    display: flex;
+    justify-content: space-around;
+    gap: 436px;
+  
+}
+.log{
+    width: 161px;
+    height: 31px;
+}
+.foot-rate{
+    color: #FFFFFF;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+.foot p{
+    color: rgba(255, 255, 255, 0.416);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: -90px;
+}
