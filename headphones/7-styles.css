@@ -1,3 +1,29 @@
+/***********************************************Animation*****************************************************/
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /***********************************************Responsive*****************************************************/
 @media (max-width: 800px) {
 }
@@ -153,6 +179,7 @@ li {
   flex-direction: column;
   text-align: center;
   margin-bottom: 109px;
+  overflow-x: hidden
 }
 .wwd-text {
   width: 637px;
@@ -163,14 +190,29 @@ li {
   font-size: 32px;
   margin-top: 110px;
   margin-bottom: 40px;
+  animation: slide-down 0.5s ease-in-out forwards;
 }
 .wwd-text p {
   line-height: 26px;
   font-family: "customfont2", sans-serif;
+  animation: slide-out 0.5s ease-in-out backwards;
 }
 .wwd-cards {
   display: flex;
   width: 1000px;
+  justify-content: space-around;
+  flex-direction: row;
+  /* animation: slide-in 0.5s ease-in-out forwards; */
+}
+.wwd-slido1 {
+  display: flex;
+  /* animation: slide-in 0.5s ease-in-out forwards; */
+
+}
+.wwd-slido2 {
+  display: flex;
+  /*animation: slide-out 0.5s ease-in-out backwards;*/
+
 }
 .wwd-cards img {
   height: 65px;
@@ -183,6 +225,18 @@ li {
 .wwd-cards h3 {
   font-family: "customfonts3", sans-serif;
   font-size: 18px;
+}
+.cards-child1{
+  animation: slide-in 0.9s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+}
+.cards-child2{
+  animation: slide-in 0.7s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+}
+.cards-child3{
+  animation: slide-in 0.5s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+}
+.cards-child4{
+  animation: slide-in 0.3s cubic-bezier(1, 0.7, 1.0, 1) forwards;
 }
 /**************************************Our Results Section********************************************/
 
@@ -253,7 +307,7 @@ li {
 }
 .contact-us h2 {
   margin-bottom: 56px;
-  font-family: "customfonts3",sans-serif;
+  font-family: "customfonts3", sans-serif;
 }
 .contact-form {
   display: flex;
@@ -287,44 +341,42 @@ label {
   color: #ffffff;
   font-family: "customfont", sans-serif;
   font-size: 14px;
-  
+
   cursor: pointer;
   margin-bottom: 143px;
 }
-.contact-us button:hover{
-    opacity: 0.9;
+.contact-us button:hover {
+  opacity: 0.9;
 }
 /**************************************Footer Section********************************************/
 
 .foot {
-    background-color: #071629;
-    padding-top: 90px;
-    padding-bottom: 126px;
+  background-color: #071629;
+  padding-top: 90px;
+  padding-bottom: 126px;
 }
-.foot-parent{
-    display: flex;
-    justify-content: space-around;
-    gap: 436px;
-  
+.foot-parent {
+  display: flex;
+  justify-content: space-around;
+  gap: 436px;
 }
-.log{
-    width: 161px;
-    height: 31px;
+.log {
+  width: 161px;
+  height: 31px;
 }
-.foot-rate{
-    color: #FFFFFF;
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    font-size: 28px;
+.foot-rate {
+  color: #ffffff;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  font-size: 28px;
 }
 
-
-.foot p{
-    color: rgba(255, 255, 255, 0.416);
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    margin-top: 70px;
-    margin-bottom: -90px;
+.foot p {
+  color: rgba(255, 255, 255, 0.416);
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 70px;
+  margin-bottom: -90px;
 }
