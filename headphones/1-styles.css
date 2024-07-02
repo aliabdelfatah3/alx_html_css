@@ -1,52 +1,3 @@
-/***********************************************Responsive*****************************************************/
-@media (max-width: 800px) {
-}
-@media (max-width: 480px) {
-  body .hero {
-    background-position: 35% 40%;
-    background-size: auto;
-  }
-  #toggle-menu {
-    display: none;
-  }
-  #toggle-menu:checked ~ .nav-bar {
-    display: block;
-  }
-
-  .hero-text-p1 {
-    width: 357px;
-    height: 80px;
-  }
-  .hero-text2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-text-p2 {
-    width: 279px;
-    font-size: 16px;
-    height: 40px;
-  }
-  .hero .hero-text-p3 {
-    width: 335px;
-    height: 182px;
-  }
-}
-/******************************************Fonts*********************************************/
-
-@font-face {
-  font-family: "customfont";
-  src: url(fonts/SourceSansPro-Black.otf) format("opentype");
-}
-@font-face {
-  font-family: "customfont2";
-  src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
-}
-@font-face {
-  font-family: "customfont3";
-  src: url(fonts/SourceSansPro-Semibold.otf) format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,6 +5,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 /******************************************Header*********************************************/
 header {
   position: relative;
@@ -83,23 +35,22 @@ li {
   font-family: "customfont", sans-serif;
   font-size: 12px;
   line-height: 15.08px;
+  width: 65px;
 }
 
 /**************************************Hero Section********************************************/
 
-.hero {
+.hero-text-container {
   background-image: url(images/headphones_hero_1.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-}
-.hero-text-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 372px;
-  padding-bottom: 115px;
+  height: 100vh;
 }
 .hero-text {
   display: flex;
@@ -165,17 +116,126 @@ li {
 }
 .wwd-cards {
   display: flex;
-  width: 1000px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
-.wwd-cards img{
-    height: 65px;
-    margin-bottom: 24px;
+.wwd-cards img {
+  height: 65px;
+  margin-bottom: 24px;
 }
-.wwd-cards p{
-    margin-top: 13px;
-    font-family: "customfonts2", sans-serif;
+.wwd-cards p {
+  margin-top: 13px;
+  font-family: "customfonts2", sans-serif;
 }
 .wwd-cards h3 {
-    font-family: "customfonts3", sans-serif;
-    font-size: 18px;
+  font-family: "customfonts3", sans-serif;
+  font-size: 18px;
+}
+.cards-child {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 180px;
+}
+.cards-parent1 {
+  display: flex;
+}
+.cards-parent2 {
+  display: flex;
+}
+/***********************************************Responsive*****************************************************/
+@media only screen and (max-width: 786px) {
+  .hero {
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+  }
+  .what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wwd-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cards-parent1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-parent2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    position: absolute;
+  }
+  .nav-text {
+    gap: 0;
+  }
+  nav ul li {
+    display: none;
+  }
+  .hero-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text-p1 {
+    display: flex;
+    height: 80px;
+    width: 357px;
+  }
+  .hero-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text-p2 {
+    width: 279px;
+    font-size: 16px;
+    height: 40px;
+  }
+  .hero-text-p3 {
+    width: 335px;
+    height: 182px;
+  }
+  .what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .wwd-text {
+    width: 100%;
+  }
+}
+/******************************************Fonts*********************************************/
+
+@font-face {
+  font-family: "customfont";
+  src: url(fonts/SourceSansPro-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont2";
+  src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont3";
+  src: url(fonts/SourceSansPro-Semibold.otf) format("opentype");
 }

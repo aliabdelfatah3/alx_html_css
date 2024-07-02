@@ -1,82 +1,4 @@
-/***********************************************Animation*****************************************************/
-@keyframes slide-in {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slide-out {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slide-down {
-  0% {
-    transform: translateY(-200%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
-/***********************************************Responsive*****************************************************/
-@media (max-width: 800px) {
-}
-@media (max-width: 480px) {
-  body .hero {
-    background-position: 35% 40%;
-    background-size: auto;
-  }
-  #toggle-menu {
-    display: none;
-  }
-  #toggle-menu:checked ~ .nav-bar {
-    display: block;
-  }
-
-  .hero-text-p1 {
-    width: 357px;
-    height: 80px;
-  }
-  .hero-text2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-text-p2 {
-    width: 279px;
-    font-size: 16px;
-    height: 40px;
-  }
-  .hero .hero-text-p3 {
-    width: 335px;
-    height: 182px;
-  }
-}
-/******************************************Fonts*********************************************/
-
-@font-face {
-  font-family: "customfont";
-  src: url(./fonts/SourceSansPro-Black.otf) format("opentype");
-}
-@font-face {
-  font-family: "customfont2";
-  src: url(./fonts/SourceSansPro-Regular.otf) format("opentype");
-}
-@font-face {
-  font-family: "customfont3";
-  src: url(./fonts/SourceSansPro-Semibold.otf) format("opentype");
-}
-@font-face {
-  font-family: "customfont4";
-  src: url(./fonts/SourceSansPro-Bold.otf) format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -379,4 +301,83 @@ label {
   font-size: 12px;
   margin-top: 70px;
   margin-bottom: -90px;
+}
+/***********************************************Animation*****************************************************/
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/***********************************************Responsive*****************************************************/
+@media (max-width: 800px) {
+}
+@media (max-width: 480px) {
+  body .hero {
+    background-position: 35% 40%;
+    background-size: auto;
+  }
+  #toggle-menu {
+    display: none;
+  }
+  #toggle-menu:checked ~ .nav-bar {
+    display: block;
+  }
+
+  .hero-text-p1 {
+    width: 357px;
+    height: 80px;
+  }
+  .hero-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text-p2 {
+    width: 279px;
+    font-size: 16px;
+    height: 40px;
+  }
+  .hero .hero-text-p3 {
+    width: 335px;
+    height: 182px;
+  }
+}
+/******************************************Fonts*********************************************/
+
+@font-face {
+  font-family: "customfont";
+  src: url(./fonts/SourceSansPro-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont2";
+  src: url(./fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont3";
+  src: url(./fonts/SourceSansPro-Semibold.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont4";
+  src: url(./fonts/SourceSansPro-Bold.otf) format("opentype");
 }
