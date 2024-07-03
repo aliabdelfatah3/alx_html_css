@@ -1,11 +1,12 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  flex-wrap: wrap;
 }
+
 /******************************************Header*********************************************/
 header {
   position: relative;
@@ -32,27 +33,26 @@ nav img {
 }
 li {
   color: #ffffff;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "customfont", sans-serif;
   font-size: 12px;
   line-height: 15.08px;
+  width: 65px;
 }
 
 /**************************************Hero Section********************************************/
 
-.hero {
+.hero-text-container {
   background-image: url(images/headphones_hero_1.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-}
-.hero-text-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  
   padding-top: 372px;
-  padding-bottom: 115px;
 }
 .hero-text {
   display: flex;
@@ -82,6 +82,7 @@ li {
 }
 .hero-text-container button:hover {
   opacity: 0.9;
+  border-radius: 22px;
 }
 
 .hero-text-p3 {
@@ -91,6 +92,7 @@ li {
   font-family: "customfont2", sans-serif;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 115px;
 }
 /**************************************What We Do Section********************************************/
 
@@ -105,6 +107,9 @@ li {
 .wwd-text {
   width: 637px;
   margin-bottom: 97px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .wwd-text h2 {
   font-family: "customfont3", sans-serif;
@@ -118,7 +123,9 @@ li {
 }
 .wwd-cards {
   display: flex;
-  width: 1000px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 .wwd-cards img {
   height: 65px;
@@ -131,6 +138,20 @@ li {
 .wwd-cards h3 {
   font-family: "customfonts3", sans-serif;
   font-size: 18px;
+}
+.cards-child {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 180px;
+}
+.cards-parent1 {
+  display: flex;
+}
+.cards-parent2 {
+  display: flex;
 }
 /**************************************Our Results Section********************************************/
 
@@ -157,6 +178,7 @@ li {
 .or-text p {
   font-family: "customfonts2", sans-serif;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .or-pen {
@@ -164,6 +186,7 @@ li {
   gap: 76px;
   margin-top: 56px;
   margin-bottom: 79px;
+  
 }
 .pentagon {
   width: 190px;
@@ -189,23 +212,66 @@ li {
     font-family: "customfonts2", sans-serif;
 }
 /***********************************************Responsive*****************************************************/
-@media (max-width: 800px) {
-}
-@media (max-width: 480px) {
-  body .hero {
-    background-position: 35% 40%;
-    background-size: auto;
+/************************************************Tablet Vision**********************************************/
+
+@media only screen and (max-width: 786px) {
+  .hero-text-container {
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
   }
-  #toggle-menu {
+  .what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wwd-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 58px;
+  }
+  .cards-parent1 {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  }
+  .cards-parent2 {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  }
+  .or-pen{
+    flex-wrap: wrap;
+    width: 456px;
+  }
+}
+/************************************************Mobile Vision**********************************************/
+@media (max-width: 480px) {
+  header {
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    position: absolute;
+  }
+  .nav-text {
+    gap: 0;
+  }
+  nav ul li {
     display: none;
   }
-  #toggle-menu:checked ~ .nav-bar {
-    display: block;
+  .hero-text-container {
+    background-position: 35% 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-
   .hero-text-p1 {
-    width: 357px;
+    display: flex;
     height: 80px;
+    width: 357px;
   }
   .hero-text2 {
     display: flex;
@@ -213,15 +279,65 @@ li {
     align-items: center;
     text-align: center;
   }
+ 
   .hero-text-p2 {
     width: 279px;
     font-size: 16px;
     height: 40px;
+    font-weight: bold;
   }
-  .hero .hero-text-p3 {
+  .hero-text-p3 {
     width: 335px;
     height: 182px;
   }
+  .what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 110px;
+  }
+  
+  .wwd-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wwd-text p{
+    width: 325px;
+    font-size: 16px;
+  }
+  .wwd-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .wwd-cards{
+    display: flex;
+    gap: 96px;
+    line-height: 26px;
+  }
+  .cards-parent1{
+    display: flex;
+    gap: 96px;
+  }
+  .cards-parent2{
+    display: flex;
+    gap: 96px;
+  }
+  .or-text{
+    width: 305px;
+  }
+  .or-pen{
+    display: flex;
+    justify-content: center;
+    width: 190px;
+  }
+  
 }
 /******************************************Fonts*********************************************/
 

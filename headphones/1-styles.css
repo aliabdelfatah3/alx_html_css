@@ -50,7 +50,8 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  
+  padding-top: 372px;
 }
 .hero-text {
   display: flex;
@@ -80,6 +81,7 @@ li {
 }
 .hero-text-container button:hover {
   opacity: 0.9;
+  border-radius: 22px;
 }
 
 .hero-text-p3 {
@@ -89,6 +91,7 @@ li {
   font-family: "customfont2", sans-serif;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 115px;
 }
 /**************************************What We Do Section********************************************/
 
@@ -103,6 +106,9 @@ li {
 .wwd-text {
   width: 637px;
   margin-bottom: 97px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .wwd-text h2 {
   font-family: "customfont3", sans-serif;
@@ -148,7 +154,7 @@ li {
 }
 /***********************************************Responsive*****************************************************/
 @media only screen and (max-width: 786px) {
-  .hero {
+  .hero-text-container {
     background-position: fill;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,14 +168,17 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 58px;
   }
   .cards-parent1 {
     display: flex;
     flex-direction: column;
+    gap: 96px;
   }
   .cards-parent2 {
     display: flex;
     flex-direction: column;
+    gap: 96px;
   }
 }
 
@@ -188,6 +197,7 @@ li {
     display: none;
   }
   .hero-text-container {
+    background-position: 35% 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -204,10 +214,12 @@ li {
     align-items: center;
     text-align: center;
   }
+ 
   .hero-text-p2 {
     width: 279px;
     font-size: 16px;
     height: 40px;
+    font-weight: bold;
   }
   .hero-text-p3 {
     width: 335px;
@@ -220,9 +232,37 @@ li {
     align-items: center;
     text-align: center;
     width: 100%;
+    margin-top: 110px;
   }
+  
   .wwd-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wwd-text p{
+    width: 325px;
+    font-size: 16px;
+  }
+  .wwd-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .wwd-cards{
+    display: flex;
+    gap: 96px;
+    line-height: 26px;
+  }
+  .cards-parent1{
+    display: flex;
+    gap: 96px;
+  }
+  .cards-parent2{
+    display: flex;
+    gap: 96px;
   }
 }
 /******************************************Fonts*********************************************/
