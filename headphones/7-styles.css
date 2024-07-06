@@ -1,10 +1,10 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  flex-wrap: wrap;
 }
 /******************************************Header*********************************************/
 header {
@@ -40,19 +40,18 @@ li {
 
 /**************************************Hero Section********************************************/
 
-.hero {
+.hero-text-container {
   background-image: url(images/headphones_hero_1.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-}
-.hero-text-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+
   padding-top: 372px;
-  padding-bottom: 115px;
 }
 .hero-text {
   display: flex;
@@ -82,6 +81,7 @@ li {
 }
 .hero-text-container button:hover {
   opacity: 0.9;
+  border-radius: 22px;
 }
 
 .hero-text-p3 {
@@ -91,6 +91,7 @@ li {
   font-family: "customfont2", sans-serif;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 115px;
 }
 /**************************************What We Do Section********************************************/
 
@@ -100,8 +101,10 @@ li {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  width: 100%;
   margin-bottom: 109px;
-  overflow-x: hidden
+  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 .wwd-text {
   width: 637px;
@@ -128,13 +131,13 @@ li {
 }
 .wwd-slido1 {
   display: flex;
+  gap: 58px;
   /* animation: slide-in 0.5s ease-in-out forwards; */
-
 }
 .wwd-slido2 {
   display: flex;
+  gap: 58px;
   /*animation: slide-out 0.5s ease-in-out backwards;*/
-
 }
 .wwd-cards img {
   height: 65px;
@@ -142,23 +145,24 @@ li {
 }
 .wwd-cards p {
   margin-top: 13px;
+  width: 206px;
   font-family: "customfonts2", sans-serif;
 }
 .wwd-cards h3 {
   font-family: "customfonts3", sans-serif;
   font-size: 18px;
 }
-.cards-child1{
-  animation: slide-in 0.9s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+.cards-child1 {
+  animation: slide-in 0.9s cubic-bezier(1, 0.7, 1, 1) forwards;
 }
-.cards-child2{
-  animation: slide-in 0.7s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+.cards-child2 {
+  animation: slide-in 0.7s cubic-bezier(1, 0.7, 1, 1) forwards;
 }
-.cards-child3{
-  animation: slide-in 0.5s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+.cards-child3 {
+  animation: slide-in 0.5s cubic-bezier(1, 0.7, 1, 1) forwards;
 }
-.cards-child4{
-  animation: slide-in 0.3s cubic-bezier(1, 0.7, 1.0, 1) forwards;
+.cards-child4 {
+  animation: slide-in 0.3s cubic-bezier(1, 0.7, 1, 1) forwards;
 }
 /**************************************Our Results Section********************************************/
 
@@ -177,10 +181,13 @@ li {
 .or-text {
   margin-top: 141px;
   width: 637px;
+  line-height: 26px;
 }
 .or-text h2 {
   font-family: "customfonts3", sans-serif;
   margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 45px;
 }
 .or-text p {
   font-family: "customfonts2", sans-serif;
@@ -329,23 +336,89 @@ label {
 }
 
 /***********************************************Responsive*****************************************************/
-@media (max-width: 800px) {
-}
-@media (max-width: 480px) {
-  body .hero {
-    background-position: 35% 40%;
-    background-size: auto;
+/************************************************Tablet Vision**********************************************/
+
+@media only screen and (max-width: 786px) {
+  .hero-text-container {
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
   }
-  #toggle-menu {
+  .what-we-do {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .wwd-text h2,
+  .wwd-text p,
+  .cards-child1,
+  .cards-child2,
+  .cards-child3,
+  .cards-child4 {
+    animation: none;
+  }
+  .wwd-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 58px;
+  }
+  .wwd-slido1{
+    display: flex;
+    flex-direction: column;
+  }
+  .wwd-slido2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-parent1 {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  }
+  .cards-parent2 {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  }
+  .or-pen {
+    flex-wrap: wrap;
+    width: 456px;
+  }
+  .foot-parent {
+    display: flex;
+    gap: 300px;
+  }
+}
+/************************************************Mobile Vision**********************************************/
+@media (max-width: 480px) {
+  header {
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    position: absolute;
+  }
+  .nav-text {
+    gap: 0;
+  }
+  nav ul li {
     display: none;
   }
-  #toggle-menu:checked ~ .nav-bar {
-    display: block;
+  .hero-text-container {
+    background-position: 35% 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-
   .hero-text-p1 {
-    width: 357px;
+    display: flex;
     height: 80px;
+    width: 357px;
   }
   .hero-text2 {
     display: flex;
@@ -353,14 +426,79 @@ label {
     align-items: center;
     text-align: center;
   }
+
   .hero-text-p2 {
     width: 279px;
     font-size: 16px;
     height: 40px;
+    font-weight: bold;
   }
-  .hero .hero-text-p3 {
+  .hero-text-p3 {
     width: 335px;
     height: 182px;
+  }
+
+  .what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    animation: none;
+  }
+  .wwd-text h2,
+  .wwd-text p,
+  .cards-child1,
+  .cards-child2,
+  .cards-child3,
+  .cards-child4 {
+    animation: none;
+  }
+
+  .wwd-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wwd-text p {
+    width: 325px;
+    font-size: 16px;
+  }
+  .wwd-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .wwd-cards {
+    display: flex;
+    gap: 96px;
+    line-height: 26px;
+    width: 207px;
+  }
+  .cards-parent1 {
+    display: flex;
+    gap: 96px;
+  }
+  .cards-parent2 {
+    display: flex;
+    gap: 96px;
+  }
+  .or-text {
+    width: 305px;
+  }
+  .or-pen {
+    display: flex;
+    justify-content: center;
+    width: 190px;
+  }
+  .foot-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
   }
 }
 /******************************************Fonts*********************************************/

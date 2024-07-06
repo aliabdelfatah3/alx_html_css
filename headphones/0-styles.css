@@ -1,160 +1,164 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/******************************************Header*********************************************/
+header {
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  gap: 220px;
+}
+.nav-text {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.nav-text li:hover {
+  color: #ff6565;
+}
+nav img {
+  width: 161px;
+  height: 32px;
+}
+li {
+  color: #ffffff;
+  font-family: "customfont", sans-serif;
+  font-size: 12px;
+  line-height: 15.08px;
+  width: 65px;
+}
+
+/**************************************Hero Section********************************************/
+
+.hero-text-container {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 372px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero-text-p1 {
+  font-family: "customfont", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+}
+.hero-text-p2 {
+  font-size: 16px;
+}
+.hero-text-container button {
+  background-color: #ff6565;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  font-family: "customfont", sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.hero-text-container button:hover {
+  opacity: 0.9;
+  border-radius: 22px;
+}
+
+.hero-text-p3 {
+  margin-top: 65px;
+  width: 637px;
+  text-align: center;
+  font-family: "customfont2", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 115px;
+}
+/***********************************************Responsive*****************************************************/
+@media only screen and (max-width: 786px) {
+  .hero-text-container {
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
   }
-  
-  /******************************************Header*********************************************/
+}
+
+@media (max-width: 480px) {
   header {
     position: relative;
   }
   nav {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
     width: 100%;
-    top: 28px;
-    gap: 220px;
+    position: absolute;
   }
   .nav-text {
-    display: flex;
-    align-items: center;
-    gap: 41px;
+    gap: 0;
   }
-  .nav-text li:hover {
-    color: #ff6565;
+  nav ul li {
+    display: none;
   }
-  nav img {
-    width: 161px;
-    height: 32px;
-  }
-  li {
-    color: #ffffff;
-    font-family: "customfont", sans-serif;
-    font-size: 12px;
-    line-height: 15.08px;
-    width: 65px;
-  }
-  
-  /**************************************Hero Section********************************************/
-  
   .hero-text-container {
-    background-image: url(images/headphones_hero_1.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
+    background-position: 35% 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-    padding-top: 372px;
-  }
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 40px;
   }
   .hero-text-p1 {
-    font-family: "customfont", sans-serif;
-    font-size: 32px;
-    color: #ffffff;
+    display: flex;
+    height: 80px;
+    width: 357px;
   }
-  .hero-text-p2 {
-    font-size: 16px;
-  }
-  .hero-text-container button {
-    background-color: #ff6565;
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    border: 0;
-    color: #ffffff;
-    font-family: "customfont", sans-serif;
-    font-size: 14px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-  .hero-text-container button:hover {
-    opacity: 0.9;
-    border-radius: 22px;
-  }
-  
-  .hero-text-p3 {
-    margin-top: 65px;
-    width: 637px;
+  .hero-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: "customfont2", sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 115px;
   }
-  /***********************************************Responsive*****************************************************/
-@media only screen and (max-width: 786px) {
-    .hero-text-container {
-      background-position: fill;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: #ffffff;
+
+  .hero-text-p2 {
+    width: 279px;
+    font-size: 16px;
+    height: 40px;
+    font-weight: bold;
+  }
+  .hero-text-p3 {
+    width: 335px;
+    height: 182px;
   }
 }
-  
-  @media (max-width: 480px) {
-    header {
-      position: relative;
-    }
-    nav {
-      width: 100%;
-      position: absolute;
-    }
-    .nav-text {
-      gap: 0;
-    }
-    nav ul li {
-      display: none;
-    }
-    .hero-text-container {
-      background-position: 35% 50%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero-text-p1 {
-      display: flex;
-      height: 80px;
-      width: 357px;
-    }
-    .hero-text2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-   
-    .hero-text-p2 {
-      width: 279px;
-      font-size: 16px;
-      height: 40px;
-      font-weight: bold;
-    }
-  }
-  /******************************************Fonts*********************************************/
-  
-  @font-face {
-    font-family: "customfont";
-    src: url(fonts/SourceSansPro-Black.otf) format("opentype");
-  }
-  @font-face {
-    font-family: "customfont2";
-    src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
-  }
-  @font-face {
-    font-family: "customfont3";
-    src: url(fonts/SourceSansPro-Semibold.otf) format("opentype");
-  }
-  
+/******************************************Fonts*********************************************/
+
+@font-face {
+  font-family: "customfont";
+  src: url(fonts/SourceSansPro-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont2";
+  src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "customfont3";
+  src: url(fonts/SourceSansPro-Semibold.otf) format("opentype");
+}
